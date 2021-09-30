@@ -1,0 +1,58 @@
+
+<div class="container_tot">
+  <div class = "div_header">
+    <header>
+       <img src= "assets/DAMA_scritta.png"  height="29" style="padding-left: 5px; padding-top: 3px">
+        <span class="text_in_header">covRew - Dataset</span>
+    </header>
+  </div>
+
+    <div class="container_chiara">
+      <div class="container_in_chiara">
+        <div class="row">
+
+          <div class="col-sm-4" id="input">
+            <div class="selettore">
+              <select class="form-control" id="select-dataset" (input)="updateInfoDataset($event.target)" autocomplete="off">
+                <option value="" disabled selected>Select Dataset</option>
+              </select>
+
+              <div class="selettore">
+                <select class="form-control hidden" id="select-AS"  (input)="updateInfoAS($event.target)">
+                  <option value="" disabled selected>Select SA</option>
+                </select>
+              </div>
+
+              <div class="box hidden" id = "lista_AS">
+                <label> Selected sensitive attributes: </label>
+                <div></div>
+              </div>
+            </div>
+
+
+              <!-- <div class="selettore mb-2">
+                <select class="form-control form-control-sm hidden" id = "select-cc" (input)="changeAS($event.target)">
+                  <option value="" disabled selected>Select CC</option>
+                </select>
+            </div> -->
+
+
+            <div id ="container_CC" class= "hidden"></div>
+
+            <div align=center>
+              <button type="button" class="btn-lg bottoni hidden" id="cc_button" (click)="addCC()"> Add coverage constraint </button>
+            </div>
+
+          </div>
+
+          <div class="col-sm-8" id="info-dataset"></div>
+
+        </div>
+
+    </div>
+  </div>
+
+  <div align=right class='sub_div'>
+    <button class="btn btn-lg bottoni" id="button_next_dataset" (click)="addNewItem()"> Next </button>
+  </div>
+</div>

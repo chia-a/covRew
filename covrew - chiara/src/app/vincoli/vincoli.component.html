@@ -1,0 +1,40 @@
+
+  <div class="container_tot">
+    <div class = "div_header">
+    <header>
+       <img src= "assets/DAMA_scritta.png"  height="29" style="padding-left: 5px; padding-top: 3px">
+        <span class="text_in_header">covRew - Script Annotation</span>
+    </header>
+    </div>
+
+
+    <div class="container_chiara">
+      <div class="container_in_chiara">
+        <div>
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="testo_titoletti"> Slicing operations:</div>
+                <div id="rewriting_lines">
+                </div>
+            </div>
+
+            <div class="col-sm-7 form-group" id="pipeline_code">
+              <!-- <textarea class="form-control box box_text_code" id="pipeline_code_text" rows="20"  disabled></textarea> -->
+              <div class=" box_text_code" id="pipeline_code_text">
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div align=right  class='sub_div'>
+      <!-- <button class="btn btn-lg  bottoni" routerLink="/script"> Back </button> -->
+      <button class="btn btn-lg  bottoni" (click)="back()"> Back </button>
+      <button class="btn btn-lg  bottoni" id="button_next_vincoli" (click)="addNewItemStatistics()"> Next </button>
+    </div>
+
+
+  </div>

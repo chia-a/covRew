@@ -1,0 +1,34 @@
+
+<div class="container_tot">
+  <div class = "div_header">
+    <header>
+       <img src= "assets/DAMA_scritta.png"  height="29" style="padding-left: 5px; padding-top: 3px">
+        <span class="text_in_header">covRew - Script</span>
+    </header>
+  </div>
+
+  <div class="container_chiara">
+    <div class="container_in_chiara">
+
+      <div class="row" style="padding-bottom:15px;">
+        <div class="col-sm-4">
+          <span class="testo_titoletti">Put your script here:</span>
+        </div>
+
+        <div class="col-sm-8" align=right style=" padding-right: 20px;" id ="bottoni_">  </div>
+      </div>
+
+
+      <div class="form-group box_text_code_script" >
+         <textarea class="form-control" id="script_text" rows="24" value=" "></textarea>
+         <!-- <div  id="script_text" style="height:480px; overflow-y:auto;" ></div> -->
+      </div>
+
+    </div>
+  </div>
+
+  <div align=right  class='sub_div'>
+    <button class="btn btn-lg bottoni" routerLink="/dataset" > Back </button>
+    <button class="btn btn-lg bottoni" id="button_next_script" (click)="addNewItemRewriting()"> Next </button>
+  </div>
+</div>

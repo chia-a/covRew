@@ -1,0 +1,395 @@
+
+html, body {
+    font-family: Arial;
+    height: 100%;
+    font-size: 15px;
+}
+
+app-root > div{
+  height: 100%;
+  padding: 10px;
+}
+
+.div_header{
+    flex: 0 1 auto;
+    /* border:2px solid red; */
+}
+
+header{
+    height: 35px;
+    background-color: #d9d9d9;
+    padding-top: 1px;
+    /* margin-bottom: 10px; */
+}
+
+.text_in_header{
+  margin-left: 8px;
+  font-size: 15px;
+  /* margin-top: 5px;
+  padding-top:10px; */
+}
+
+.text-header{
+  margin-top: 40px;
+  padding-top: 40px;
+}
+
+.container_tot{
+    display: flex;
+    border: 1px outset gray;
+    background-color: #EEEEEE;
+    height: 100%;
+    flex-flow: column;
+}
+
+.container_chiara{
+    flex: 1 1 auto;
+    background-color: #EEEEEE;
+    /* border:2px solid green; */
+    width: 100%;
+    overflow: auto;
+    padding: 15px;
+}
+
+.container_in_chiara{
+    background-color: #EEEEEE;
+    /* border:2px solid yellow; */
+    margin:auto;
+    width: 90%;
+    height: 100%;
+    padding: 15px;
+    /* width: 1400px; */
+    /* height:inherit; */
+    /* height: 650px; */
+}
+
+#div_sopra_titolo{
+    margin-top:10px;
+  }
+
+
+#titolo{
+    /* margin-top:100px; */
+    width: 700px;
+    height: 250px;
+    color: #B60000;
+    text-align:center;
+    font-size: 13px;
+}
+ /* #990000; */
+/* .service-small option {
+    font-size: 14px;
+    padding: 5px;
+    background: #5c5c5c;
+} */
+
+.img_inizio{
+  width:50px;
+}
+
+/* ************** Dataset ************* */
+
+.sub_div {
+    flex: 0 1 auto;
+    padding-right: 7%;
+    /* padding-right: 95px; */
+}
+
+.bottoni {
+   text-align: center;
+   color: #fff;
+   padding: 5px 10px;
+   border-radius: 4px;
+   border: solid 1px #00BCD4;
+   background: #00BCD4;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   margin-left: 5px;
+}
+
+.form-control {
+  font-size: 15px;
+}
+
+.selettore{
+    margin-top: 20px;
+}
+
+.row{
+  margin-bottom: 5px;
+}
+
+.selettore_cc_vincoli{
+  margin-bottom: 5px;
+}
+
+div>.cc_row>.col-sm-5{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+div>.cc_row>.col-sm-3{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+div>.cc_row>.col-sm-2{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.table_AS_values_count{
+  margin-left: 20px;
+}
+
+.table_AS_values_count td {
+           padding-left: 10px;
+       }
+
+/* ************** Script ************* */
+
+
+.testo_titoletti {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 2px;
+  margin-bottom: 10px;
+  font-size:16px;
+}
+
+.bottoni_script {
+   text-align: center;
+   padding: 5px 10px;
+   border-radius: 4px;
+   border: solid 1px gray;
+   background: #d9d9d9;
+   /* margin-right: 5px; */
+   margin-left: 5px;
+}
+
+
+
+.box{
+  border:2px solid #cc0000 !important;
+  border-radius: 5px;
+  /* background: #eee; */
+  background: white;
+  width:100%;
+  margin-top: 20px;
+  /* margin-left: 2px;
+  margin-right: 2px; */
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+
+.box_text_code {
+  border:2px solid #cc0000;
+  border-radius: 5px;
+  background: white;
+  width:100%;
+     font-family: monospace;
+     font-size: 14px;
+    background-attachment: local;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    padding-top: 10px;
+    /* border-color:#ccc; */
+    padding-right:5px;
+    padding-bottom: 10px;
+
+    /* background-size:  */
+
+}
+
+.box_text_code_script {
+  border:2px solid #cc0000;
+  border-radius: 5px;
+  background: white;
+  width:100%;
+     font-family: monospace;
+     font-size: 14px;
+    background-attachment: local;
+    background-repeat: no-repeat;
+
+    /* background-size:  */
+
+}
+
+/* ************** Vincoli ************* */
+#rewriting_lines{
+  margin-left:5px;
+}
+
+.container_input_lines{
+  padding-left: 20px;
+}
+
+.testo_titoletti_interni {
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: 2px;
+  margin-bottom: 10px;
+}
+
+.selettore_cc_vincoli{
+    margin-top: 0px;
+}
+
+.monospace_text {
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.monospace_text_script {
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.monospace_number {
+  font-family: monospace;
+  font-size: 14px;
+  width: 20px;
+  padding-right: 5px;
+}
+
+.selected_lines_script {
+  color: #000000;
+}
+
+.selected_lines_checked{
+  color: #00BCD4;
+}
+
+.selected_lines_final {
+  color: black;
+}
+
+.selected_rewritten_lines_final {
+  color: #cc0000;
+}
+
+#pipeline_code_text {
+  color: #BEBEBE;
+}
+
+
+  /* ************** pagina statistiche ************* */
+
+  .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+      color: #fff;
+      background-color: #cc0000;
+  }
+
+  a {
+      color: #cc0000;
+      text-decoration: none;
+  }
+
+  .border_style {
+    border-left:2px solid #cc0000;
+    border-right: 2px solid #cc0000;
+    border-top: 2px solid #cc0000;
+    border-bottom: 2px solid #cc0000;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+        background-color: white;
+    /* background-color: #E8E8E8; */
+  }
+
+  hr {
+    border-top: 0.1px solid;
+  }
+
+
+.box_text_stat{
+  border:1px solid #00BCD4;
+  border-radius: 5px;
+  background: #FFFFFF;
+  padding:3px;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+.box_card_stat{
+  border:2px solid #cc0000;
+  border-radius: 5px;
+  width:99%;
+  margin-right: 5px;
+  margin-left: 2px;
+  margin-bottom: 7px;
+}
+
+
+.table_card_3info{
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        /* margin-bottom: 10px; */
+          background-color: white;
+      }
+
+.wrapper {
+        padding-top: 30px;
+        padding-right: 5px;
+        padding-left: 5px;
+      }
+
+/* .border_cell>.tooltip>div{
+  background-color: red;
+}*/
+
+/* .bottoni_script>.tooltip>div{
+  background-color: red;
+  font-size: 20px;
+} */
+
+
+#table_card_id {
+  margin-left: auto;
+ margin-right: auto;
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-left: 5px;
+      }
+
+#table_card_id>thead{
+  background-color: #F7ECEA;
+}
+
+.border_cell{
+  border:1px solid Transparent !important;
+}
+
+
+.tooltip-satisfied{
+  color:#00BCD4;
+}
+
+.tooltip-not-satisfied{
+  color:red;
+}
+
+.tooltip {
+    display:none;
+    background:transparent url(https://dl.dropboxusercontent.com/u/25819920/tooltip/black_arrow.png);
+    font-size:12px;
+    height:70px;
+    width:160px;
+    padding:25px;
+    /* color:blue; */
+    color:#fff;
+}
+
+/* h4 {
+  color:#cc0000;
+  font-weight: bold;
+} */
+
+
+
+/* .del_botton{
+  font-size: 16px;
+} */

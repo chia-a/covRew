@@ -1,0 +1,541 @@
+{
+    "dataset_name": "Adult",
+    "dataset_path": "data/adult.csv",
+    "dataset_lenght": 48842,
+    "scripts": [
+        "adult_script1.py",
+        "adult_script2.py",
+        "adult_script3.py"
+    ],
+    "dataset_description": "The US Adult Census dataset is a repository of 48,842 entries extracted from the 1994 US Census database",
+    "attributes": [
+        {
+            "name": "age",
+            "type": "numeric",
+            "max": 90.0,
+            "min": 17.0,
+            "description": "the age of an individual"
+        },
+        {
+            "name": "workclass",
+            "type": "categorical",
+            "values": [
+                {
+                    "name": "?",
+                    "count": 2799
+                },
+                {
+                    "name": "Federal-gov",
+                    "count": 1432
+                },
+                {
+                    "name": "Local-gov",
+                    "count": 3136
+                },
+                {
+                    "name": "Never-worked",
+                    "count": 10
+                },
+                {
+                    "name": "Private",
+                    "count": 33906
+                },
+                {
+                    "name": "Self-emp-inc",
+                    "count": 1695
+                },
+                {
+                    "name": "Self-emp-not-inc",
+                    "count": 3862
+                },
+                {
+                    "name": "State-gov",
+                    "count": 1981
+                },
+                {
+                    "name": "Without-pay",
+                    "count": 21
+                }
+            ],
+            "description": "a general term to represent the employment status of an individual"
+        },
+        {
+            "name": "fnlwgt",
+            "type": "numeric",
+            "max": 1490400.0,
+            "min": 12285.0,
+            "description": "the final weight, i.e., the number of people the census believes the entry represents"
+        },
+        {
+            "name": "education",
+            "type": "categorical",
+            "values": [
+                {
+                    "name": "10th",
+                    "count": 1389
+                },
+                {
+                    "name": "11th",
+                    "count": 1812
+                },
+                {
+                    "name": "12th",
+                    "count": 657
+                },
+                {
+                    "name": "1st-4th",
+                    "count": 247
+                },
+                {
+                    "name": "5th-6th",
+                    "count": 509
+                },
+                {
+                    "name": "7th-8th",
+                    "count": 955
+                },
+                {
+                    "name": "9th",
+                    "count": 756
+                },
+                {
+                    "name": "Assoc-acdm",
+                    "count": 1601
+                },
+                {
+                    "name": "Assoc-voc",
+                    "count": 2061
+                },
+                {
+                    "name": "Bachelors",
+                    "count": 8025
+                },
+                {
+                    "name": "Doctorate",
+                    "count": 594
+                },
+                {
+                    "name": "HS-grad",
+                    "count": 15784
+                },
+                {
+                    "name": "Masters",
+                    "count": 2657
+                },
+                {
+                    "name": "Preschool",
+                    "count": 83
+                },
+                {
+                    "name": "Prof-school",
+                    "count": 834
+                },
+                {
+                    "name": "Some-college",
+                    "count": 10878
+                }
+            ],
+            "description": "the highest level of education achieved by an individual"
+        },
+        {
+            "name": "education_num",
+            "type": "numeric",
+            "max": 16.0,
+            "min": 1.0,
+            "description": "the highest level of education achieved, in numerical form"
+        },
+        {
+            "name": "marital_status",
+            "type": "categorical",
+            "values": [
+                {
+                    "name": "Divorced",
+                    "count": 6633
+                },
+                {
+                    "name": "Married-AF-spouse",
+                    "count": 37
+                },
+                {
+                    "name": "Married-civ-spouse",
+                    "count": 22379
+                },
+                {
+                    "name": "Married-spouse-absent",
+                    "count": 628
+                },
+                {
+                    "name": "Never-married",
+                    "count": 16117
+                },
+                {
+                    "name": "Separated",
+                    "count": 1530
+                },
+                {
+                    "name": "Widowed",
+                    "count": 1518
+                }
+            ],
+            "description": "the marital status of an individual"
+        },
+        {
+            "name": "occupation",
+            "type": "categorical",
+            "values": [
+                {
+                    "name": "?",
+                    "count": 2809
+                },
+                {
+                    "name": "Adm-clerical",
+                    "count": 5611
+                },
+                {
+                    "name": "Armed-Forces",
+                    "count": 15
+                },
+                {
+                    "name": "Craft-repair",
+                    "count": 6112
+                },
+                {
+                    "name": "Exec-managerial",
+                    "count": 6086
+                },
+                {
+                    "name": "Farming-fishing",
+                    "count": 1490
+                },
+                {
+                    "name": "Handlers-cleaners",
+                    "count": 2072
+                },
+                {
+                    "name": "Machine-op-inspct",
+                    "count": 3022
+                },
+                {
+                    "name": "Other-service",
+                    "count": 4923
+                },
+                {
+                    "name": "Priv-house-serv",
+                    "count": 242
+                },
+                {
+                    "name": "Prof-specialty",
+                    "count": 6172
+                },
+                {
+                    "name": "Protective-serv",
+                    "count": 983
+                },
+                {
+                    "name": "Sales",
+                    "count": 5504
+                },
+                {
+                    "name": "Tech-support",
+                    "count": 1446
+                },
+                {
+                    "name": "Transport-moving",
+                    "count": 2355
+                }
+            ],
+            "description": "the general type of occupation of an individual"
+        },
+        {
+            "name": "relationship",
+            "type": "categorical",
+            "values": [
+                {
+                    "name": "Husband",
+                    "count": 19716
+                },
+                {
+                    "name": "Not-in-family",
+                    "count": 12583
+                },
+                {
+                    "name": "Other-relative",
+                    "count": 1506
+                },
+                {
+                    "name": "Own-child",
+                    "count": 7581
+                },
+                {
+                    "name": "Unmarried",
+                    "count": 5125
+                },
+                {
+                    "name": "Wife",
+                    "count": 2331
+                }
+            ],
+            "description": "represents what this individual is relative to others (e.g., husband)"
+        },
+        {
+            "name": "race",
+            "type": "categorical",
+            "values": [
+                {
+                    "name": "Amer-Indian-Eskimo",
+                    "count": 470
+                },
+                {
+                    "name": "Asian-Pac-Islander",
+                    "count": 1519
+                },
+                {
+                    "name": "Black",
+                    "count": 4685
+                },
+                {
+                    "name": "Other",
+                    "count": 406
+                },
+                {
+                    "name": "White",
+                    "count": 41762
+                }
+            ],
+            "description": "the description of an individual’s race"
+        },
+        {
+            "name": "sex",
+            "type": "categorical",
+            "values": [
+                {
+                    "name": "Female",
+                    "count": 16192
+                },
+                {
+                    "name": "Male",
+                    "count": 32650
+                }
+            ],
+            "description": "the biological sex of the individual"
+        },
+        {
+            "name": "capital_gain",
+            "type": "numeric",
+            "max": 99999.0,
+            "min": 0.0,
+            "description": "the capital gain for an individual"
+        },
+        {
+            "name": "capital_loss",
+            "type": "numeric",
+            "max": 4356.0,
+            "min": 0.0,
+            "description": "the capital loss for an individual"
+        },
+        {
+            "name": "hours_per_week",
+            "type": "numeric",
+            "max": 99.0,
+            "min": 1.0,
+            "description": "the hours an individual has reported to work per week"
+        },
+        {
+            "name": "native_country",
+            "type": "categorical",
+            "values": [
+                {
+                    "name": "?",
+                    "count": 857
+                },
+                {
+                    "name": "Cambodia",
+                    "count": 28
+                },
+                {
+                    "name": "Canada",
+                    "count": 182
+                },
+                {
+                    "name": "China",
+                    "count": 122
+                },
+                {
+                    "name": "Columbia",
+                    "count": 85
+                },
+                {
+                    "name": "Cuba",
+                    "count": 138
+                },
+                {
+                    "name": "Dominican-Republic",
+                    "count": 103
+                },
+                {
+                    "name": "Ecuador",
+                    "count": 45
+                },
+                {
+                    "name": "El-Salvador",
+                    "count": 155
+                },
+                {
+                    "name": "England",
+                    "count": 127
+                },
+                {
+                    "name": "France",
+                    "count": 38
+                },
+                {
+                    "name": "Germany",
+                    "count": 206
+                },
+                {
+                    "name": "Greece",
+                    "count": 49
+                },
+                {
+                    "name": "Guatemala",
+                    "count": 88
+                },
+                {
+                    "name": "Haiti",
+                    "count": 75
+                },
+                {
+                    "name": "Holand-Netherlands",
+                    "count": 1
+                },
+                {
+                    "name": "Honduras",
+                    "count": 20
+                },
+                {
+                    "name": "Hong",
+                    "count": 30
+                },
+                {
+                    "name": "Hungary",
+                    "count": 19
+                },
+                {
+                    "name": "India",
+                    "count": 151
+                },
+                {
+                    "name": "Iran",
+                    "count": 59
+                },
+                {
+                    "name": "Ireland",
+                    "count": 37
+                },
+                {
+                    "name": "Italy",
+                    "count": 105
+                },
+                {
+                    "name": "Jamaica",
+                    "count": 106
+                },
+                {
+                    "name": "Japan",
+                    "count": 92
+                },
+                {
+                    "name": "Laos",
+                    "count": 23
+                },
+                {
+                    "name": "Mexico",
+                    "count": 951
+                },
+                {
+                    "name": "Nicaragua",
+                    "count": 49
+                },
+                {
+                    "name": "Outlying-US(Guam-USVI-etc)",
+                    "count": 23
+                },
+                {
+                    "name": "Peru",
+                    "count": 46
+                },
+                {
+                    "name": "Philippines",
+                    "count": 295
+                },
+                {
+                    "name": "Poland",
+                    "count": 87
+                },
+                {
+                    "name": "Portugal",
+                    "count": 67
+                },
+                {
+                    "name": "Puerto-Rico",
+                    "count": 184
+                },
+                {
+                    "name": "Scotland",
+                    "count": 21
+                },
+                {
+                    "name": "South",
+                    "count": 115
+                },
+                {
+                    "name": "Taiwan",
+                    "count": 65
+                },
+                {
+                    "name": "Thailand",
+                    "count": 30
+                },
+                {
+                    "name": "Trinadad&Tobago",
+                    "count": 27
+                },
+                {
+                    "name": "United-States",
+                    "count": 43832
+                },
+                {
+                    "name": "Vietnam",
+                    "count": 86
+                },
+                {
+                    "name": "Yugoslavia",
+                    "count": 23
+                }
+            ],
+            "description": "the country of origin for an individual"
+        },
+        {
+            "name": "label",
+            "type": "categorical",
+            "values": [
+                {
+                    "name": "<=50K",
+                    "count": 37155
+                },
+                {
+                    "name": ">50K",
+                    "count": 11687
+                }
+            ],
+            "description": "whether or not an individual makes more than $50,000 annually"
+        },
+        {
+            "name": "id",
+            "type": "numeric",
+            "max": 113964.0,
+            "min": 32562.0,
+            "description": "the identifier of an individual"
+        }
+    ]
+}

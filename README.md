@@ -11,10 +11,10 @@ This project was developed with Python 3 and Angular 11.2.1.
 ## Organization of the repository
 
 There are two main folders:
-- covrew - chiara contains the project developed in Angular 
-- DEMO contains all the files for parsing the given pipeline, identifying the filtering operations and calling the rewriting algorithm so that the result will satisfy the constraint (see [3] for further details)
+- *covrew - chiara* contains the project developed in Angular 
+- *DEMO* contains all the files for parsing the given pipeline, identifying the filtering operations and calling the rewriting algorithm so that the result will satisfy the constraint (see [3] for further details)
 
-US Adult Census and Diabetes US are the available datasets and the proposed pipeline refer to them. Obviously you can add your dataset in the data folder and specify your pipeline.
+*US Adult Census* and *Diabetes US* are the available datasets and the proposed pipeline refer to them. Obviously you can add your dataset in the data folder and specify your pipeline.
 
 
 ## References

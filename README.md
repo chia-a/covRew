@@ -19,7 +19,7 @@ There are two main folders:
 ## Instructions for running the demo
 - Dowload the project folder
 - Run `ng serve` for a dev server.  For more details on how to run an Angular Project see https://angular.io/guide/setup-local 
-- Run `the server.py` file located in DEMO folder 
+- Run the `server.py` file located in DEMO folder 
 - Navigate to `http://localhost:4200/` for seeing the application
 
 

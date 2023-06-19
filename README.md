@@ -16,6 +16,12 @@ There are two main folders:
 
 *US Adult Census* and *Diabetes US* are the available datasets and the proposed pipeline refer to them. Obviously you can add your dataset in the data folder and specify your pipeline.
 
+## Instructions for running the demo
+- Dowload the project folder
+- Run `ng serve` for a dev server.  For more details on how to run an Angular Project see https://angular.io/guide/setup-local 
+- Run `the server.py` file located in DEMO folder 
+- Navigate to `http://localhost:4200/` for seeing the application
+
 
 ## References
 
